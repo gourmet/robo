@@ -1,0 +1,30 @@
+{
+	"name": "gourmet/robo"
+	, "description": "A simple shell to wrap around codegyre/robo."
+	, "version": "0.1.0"
+	, "type": "cakephp-plugin"
+	, "keywords": [
+		"cakephp"
+		, "robo"
+		, "build"
+		, "tasks"
+		, "shell"
+		, "plugin"
+	]
+	, "homepage": "http://github.com/gourmet/robo"
+	, "license": "MIT"
+	, "authors": [
+		{
+			"name": "Jad Bitar"
+			, "role": "Author"
+		}
+	]
+	, "support": {
+		"issues": "http://github.com/gourmet/robo/issues"
+		, "source": "http://github.com/gourmet/robo"
+	}
+	, "require": {
+		"composer/installers": "*"
+		, "codegyre/robo": "~0.3.0"
+	}
+}
