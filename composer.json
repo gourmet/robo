@@ -25,6 +25,6 @@
 	}
 	, "require": {
 		"composer/installers": "*"
-		, "codegyre/robo": "~0.4.0"
+		, "jadb/robot": "~0.1.0"
 	}
 }
