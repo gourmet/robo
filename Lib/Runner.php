@@ -10,7 +10,6 @@ class Runner extends RoboRunner {
 
 	public function __construct() {
 		$this->file = self::ROBOFILE;
-		parent::__construct();
 	}
 
 	protected function loadRoboFile() {
