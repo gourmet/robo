@@ -32,4 +32,7 @@
 			"Gourmet\\Robo\\": "src"
 		}
 	}
+	, "extra": {
+		"installer-name": "Gourmet/Robo"
+	}
 }
