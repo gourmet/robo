@@ -24,7 +24,7 @@
 		, "source": "http://github.com/gourmet/robo"
 	}
 	, "require": {
-		"composer/installers": "*"
+		"cakephp/plugin-installer": "dev-master"
 		, "jadb/robot": "~0.1.0"
 	}
 	, "autoload": {
