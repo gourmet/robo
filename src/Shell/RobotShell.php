@@ -1,8 +1,8 @@
 <?php
 
-namespace Gourmet\Robo\Console\Command;
+namespace Gourmet\Robo\Shell;
 
-use Cake\Console\Shell;
+use Cake\Shell;
 use Cake\Console\ConsoleOptionParser;
 use Cake\Core\Configure;
 use Gourmet\Robo\Lib\Runner;
