@@ -1,7 +1,6 @@
 {
 	"name": "gourmet/robo"
 	, "description": "A simple shell to wrap around codegyre/robo."
-	, "version": "0.2.4"
 	, "type": "cakephp-plugin"
 	, "keywords": [
 		"cakephp"
