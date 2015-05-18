@@ -8,50 +8,36 @@ A simple [CakePHP][cakephp] shell to wrap around [Robo][robo:repo].
 
 ## Install
 
-Add the plugin to your project's `composer.json` - something like this:
+Using [Composer][composer]:
 
-```json
-{
-	"require": {
-		"gourmet/robo": "*"
-	}
-}
+```
+composer require gourmet/robo:dev-master
 ```
 
-Because this plugin has the type `cakephp-plugin` set in its own `composer.json`,
-[Composer][composer] will install it inside your /Plugins directory, rather than
-in your `vendor-dir`. It is recommended that you add /Plugins/Robo to your
-`.gitignore` file and here's [why][composer:ignore].
-
-### Enable plugin
-
-Enable it in your `App/Config/bootstrap.php` like so:
+You then need to load the plugin. In `boostrap.php`, something like:
 
 ```php
-\Cake\Core\Plugin::load('Robo', [
-	'namespace' => 'Gourmet\\Robo',
-	'autoload' => true
-]);
+\Cake\Core\Plugin::load('Gourmet/Robo', ['bootstrap' => true]);
 ```
 
 ## Usage
 
 ```
-cake Robo.robot
+bin/cake Gourmet/Robo.robot
 ```
 
-## Configure
+### Runtime Configuration
 
 From the cli:
 
 ```
-cake Robo.robot --config=path/to/RoboFile.php
+bin/cake Gourmet/Robo.robot --config=path/to/robo.php
 ```
 
-Or using the `Path.robofile` configuration key:
+Or using the `Gourmet/Robo.path` configuration key:
 
 ```php
-Cake\Core\Configure::write('Path.robofile', 'path/to/RoboFile.php');
+Cake\Core\Configure::write('Gourmet/Robo.path', 'path/to/robo.php');
 ```
 
 ## TODO

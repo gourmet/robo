@@ -45,8 +45,8 @@ class RobotShell extends Shell {
  */
 	public function getOptionParser() {
 		$file = Runner::ROBOFILE;
-		if (Configure::check('Path.robofile')) {
-			$file = Configure::read('Path.robofile');
+		if (Configure::check('Gourmet/Robo.path')) {
+			$file = Configure::read('Gourmet/Robo.path');
 		}
 
 		$parser = new ConsoleOptionParser('robot', false);
